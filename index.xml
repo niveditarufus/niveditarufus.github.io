@@ -1,0 +1,42 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Nivedita Rufus</title>
+        <link>https://niveditarufus.github.io/</link>
+        <description>Nivedita Rufus</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 12 May 2020 21:51:16 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/" rel="self" type="application/rss+xml" /><item>
+    <title>About Me</title>
+    <link>https://niveditarufus.github.io/posts/about-me/</link>
+    <pubDate>Mon, 11 May 2020 20:48:48 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/about-me/</guid>
+    <description><![CDATA[I am Nivedita Rufus. I am an active researcher and very passionate about Robotics. So, owing to my passion I primarily work with ‘Self-Driving Cars’ which is also part of my research work at IIIT- Hyderabad, India. I am also a GSoC'20 intern at RoboComp and will be working on the project “Software agent for estimating occupancy in medium and large buildings using RGB cameras”. This blog will be mostly about my GSoC journey.]]></description>
+</item><item>
+    <title>Before GSoC &#39;20</title>
+    <link>https://niveditarufus.github.io/posts/before-gsoc/</link>
+    <pubDate>Mon, 11 May 2020 20:48:48 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/before-gsoc/</guid>
+    <description><![CDATA[I had decided that I want to participate in GSoC 2020 sometime around September 2019. This is quite early 😂, considering that there were still five months for the organizations to be announced. But, I still went through the organizations that participated in GSoC, 2019. I knew that I would be very comfortable working with robotics-related projects. So, I looked through the organizations which had projects in this field. I also followed through and tried to understand as much as I can the projects undertaken by each of the organizations.]]></description>
+</item><item>
+    <title>Contribution 3: Fixing default parameter values</title>
+    <link>https://niveditarufus.github.io/posts/contribution-3/</link>
+    <pubDate>Tue, 12 May 2020 21:51:16 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/contribution-3/</guid>
+    <description><![CDATA[I had submitted a pull-request to update the file specificworker.py in the component openpifpafserver. These added lines are some parameters which are in the file and not specifying these values lead to Attribute errors. I initialized all these parameters to the default values specified in the openpifpaf package. I belive this should solve the issue. This pull-request is still under review an I will update the post when the status changes.]]></description>
+</item><item>
+    <title>Contribution 2: Fixing import errors</title>
+    <link>https://niveditarufus.github.io/posts/contribution-2/</link>
+    <pubDate>Tue, 12 May 2020 21:35:34 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/contribution-2/</guid>
+    <description><![CDATA[I found this issue because I was still unable to get the PeopleCounter component working. It raised an import error there where some functions imported from the resources directory, which is outside the working directory. My commit ensures that the python modules are imported properly. I had made a pull-request for them the same which is still under review. I will update this post once the status changes.]]></description>
+</item><item>
+    <title>Contribution 1: My First Bug Fix</title>
+    <link>https://niveditarufus.github.io/posts/my-first-bug-fix/</link>
+    <pubDate>Tue, 12 May 2020 21:03:58 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/my-first-bug-fix/</guid>
+    <description><![CDATA[This post is about my very first bug fix in RoboComp&rsquo;s human-detection repository. Everybody starts with a very small bug, so did I. I found this issue on March 16(before the student application deadline) when I was trying to get the PeopleCounter module working on my PC. I realized that there was a line missing in the config file that hosts the People Server. I also found that a path to MobileNetSSD_deploy.]]></description>
+</item></channel>
+</rss>
