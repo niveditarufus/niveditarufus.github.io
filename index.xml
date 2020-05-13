@@ -30,7 +30,8 @@
     <pubDate>Tue, 12 May 2020 21:35:34 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/contribution-2/</guid>
-    <description><![CDATA[I found this issue because I was still unable to get the PeopleCounter component working. It raised an import error there where some functions imported from the resources directory, which is outside the working directory. My commit ensures that the python modules are imported properly. I had made a pull-request for them the same which is still under review. I will update this post once the status changes.]]></description>
+    <description><![CDATA[I found this issue because I was still unable to get the PeopleCounter component working. It raised an import error there where some functions imported from the resources directory, which is outside the working directory. My commit ensures that the python modules are imported properly. I had made a pull-request for them the same which is still under review. I will update this post once the status changes.
+Status: Under Review ]]></description>
 </item><item>
     <title>Contribution 1: My First Bug Fix</title>
     <link>https://niveditarufus.github.io/posts/my-first-bug-fix/</link>
