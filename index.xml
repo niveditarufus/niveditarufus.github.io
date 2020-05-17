@@ -23,14 +23,14 @@
     <pubDate>Sun, 17 May 2020 15:02:35 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/contribution-4/</guid>
-    <description><![CDATA[After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much abvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3. This work is still in-progress an I will update the post when the status changes.]]></description>
+    <description><![CDATA[After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much abvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3. This work is still in-progress and I will update the post when the status changes.]]></description>
 </item><item>
     <title>Contribution 3: Fixing default parameter values</title>
     <link>https://niveditarufus.github.io/posts/contribution-3/</link>
     <pubDate>Tue, 12 May 2020 21:51:16 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/contribution-3/</guid>
-    <description><![CDATA[I had submitted a pull-request to update the file specificworker.py in the component openpifpafserver. These added lines are some parameters which are in the file and not specifying these values lead to Attribute errors. I initialized all these parameters to the default values specified in the openpifpaf package. I belive this should solve the issue. This pull-request is still under review an I will update the post when the status changes.]]></description>
+    <description><![CDATA[I had submitted a pull-request to update the file specificworker.py in the component openpifpafserver. These added lines are some parameters which are in the file and not specifying these values lead to Attribute errors. I initialized all these parameters to the default values specified in the openpifpaf package. I belive this should solve the issue. This pull-request is still under review and I will update the post when the status changes.]]></description>
 </item><item>
     <title>Contribution 2: Fixing import errors</title>
     <link>https://niveditarufus.github.io/posts/contribution-2/</link>
