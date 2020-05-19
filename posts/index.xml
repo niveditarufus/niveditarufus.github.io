@@ -18,7 +18,7 @@
     <guid>https://niveditarufus.github.io/posts/before-gsoc/</guid>
     <description><![CDATA[I had decided that I want to participate in GSoC 2020 sometime around September 2019. This is quite early 😂, considering that there were still five months for the organizations to be announced. But, I still went through the organizations that participated in GSoC, 2019. I knew that I would be very comfortable working with robotics-related projects. So, I looked through the organizations which had projects in this field. I also followed through and tried to understand as much as I can the projects undertaken by each of the organizations.]]></description>
 </item><item>
-    <title>Contribution 4: Porting to Python 3 and changes that is required because refactoring in the existing python library</title>
+    <title>Contribution 4: Porting to Python 3 and changes that is required because of refactoring in the existing python library</title>
     <link>https://niveditarufus.github.io/posts/contribution-4/</link>
     <pubDate>Sun, 17 May 2020 15:02:35 &#43;0530</pubDate>
     <author>Author</author>
