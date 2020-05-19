@@ -18,12 +18,12 @@
     <guid>https://niveditarufus.github.io/posts/before-gsoc/</guid>
     <description><![CDATA[I had decided that I want to participate in GSoC 2020 sometime around September 2019. This is quite early 😂, considering that there were still five months for the organizations to be announced. But, I still went through the organizations that participated in GSoC, 2019. I knew that I would be very comfortable working with robotics-related projects. So, I looked through the organizations which had projects in this field. I also followed through and tried to understand as much as I can the projects undertaken by each of the organizations.]]></description>
 </item><item>
-    <title>Contribution 4: Porting to Python 3</title>
+    <title>Contribution 4: Porting to Python 3 and changes that is required because refactoring in the existing python library</title>
     <link>https://niveditarufus.github.io/posts/contribution-4/</link>
     <pubDate>Sun, 17 May 2020 15:02:35 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/contribution-4/</guid>
-    <description><![CDATA[After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much abvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3. This work is still in-progress and I will update the post when the status changes.]]></description>
+    <description><![CDATA[After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much abvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3 which is done. But, in this process I learnt that due to significant refactoring done in the latest version python openpifpaf library some functions also need to be changed accordingly in our component.]]></description>
 </item><item>
     <title>Contribution 3: Fixing default parameter values</title>
     <link>https://niveditarufus.github.io/posts/contribution-3/</link>
