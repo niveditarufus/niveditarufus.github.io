@@ -7,14 +7,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Contribution 4: Porting to Python 3 and changes that is required because of refactoring in the existing python library - Nivedita Rufus</title>
         <meta name="Description" content=""><meta property="og:title" content="Contribution 4: Porting to Python 3 and changes that is required because of refactoring in the existing python library" />
-<meta property="og:description" content="After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much abvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3 which is done. But, in this process I learnt that due to significant refactoring done in the latest version python openpifpaf library some functions also need to be changed accordingly in our component." />
+<meta property="og:description" content="After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much abvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3 which is done. Changes made are:
+ Changed all print statements from print &quot; &quot; to print()." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://niveditarufus.github.io/posts/contribution-4/" />
 <meta property="article:published_time" content="2020-05-17T15:02:35+05:30" />
 <meta property="article:modified_time" content="2020-05-17T15:02:35+05:30" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Contribution 4: Porting to Python 3 and changes that is required because of refactoring in the existing python library"/>
-<meta name="twitter:description" content="After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much abvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3 which is done. But, in this process I learnt that due to significant refactoring done in the latest version python openpifpaf library some functions also need to be changed accordingly in our component."/>
+<meta name="twitter:description" content="After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much abvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3 which is done. Changes made are:
+ Changed all print statements from print &quot; &quot; to print()."/>
 <meta name="application-name" content="Nivedita Rufus">
 <meta name="apple-mobile-web-app-title" content="Nivedita Rufus"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -27,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/niveditarufus.github.io\/posts\/contribution-4\/"
-        },"genre": "posts","wordcount":  111 ,
+        },"genre": "posts","wordcount":  281 ,
         "url": "https:\/\/niveditarufus.github.io\/posts\/contribution-4\/","datePublished": "2020-05-17T15:02:35+05:30","dateModified": "2020-05-17T15:02:35+05:30","author": {
                 "@type": "Person",
                 "name": "Nivedita Rufus"
@@ -76,8 +78,8 @@
         </div><article class="page single"><h1 class="single-title animated flipInX">Contribution 4: Porting to Python 3 and changes that is required because of refactoring in the existing python library</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nivedita Rufus</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-05-17>2020-05-17</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>about 111 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>1 min&nbsp;</div>
+                <i class="fas fa-pencil-alt fa-fw"></i>about 281 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>2 min&nbsp;</div>
         </div><div class="details toc" id="toc-static">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -93,7 +95,32 @@
   </ul>
 </nav></div>
             </div><div class="content" id="content"><p>After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much abvious that the first task assigned to me was porting the <a href="https://github.com/robocomp/human-detection/tree/master/components/peopleCounter" target="_blank" rel="noopener noreffer">People Counter</a> module from Python 2 to Python 3 which is done.
-But, in this process I learnt that due to significant refactoring done in the latest version python <a href="https://github.com/vita-epfl/openpifpaf" target="_blank" rel="noopener noreffer">openpifpaf library</a> some functions also need to be changed accordingly in our component. This process is underway. I will share the details of the exact changes I had to make soon!!</p>
+Changes made are:</p>
+<ol>
+<li>Changed all print statements from <code>print &quot; &quot;</code> to <code>print()</code>.</li>
+<li>Python3 uses the module <code>queue</code> and not <code>Queue</code>.</li>
+<li>In Python 3 there are two different types of strings:
+<ul>
+<li>The bytes type:<br>
+This is just a sequence of bytes, Python doesn&rsquo;t know anything about how to interpret this as characters.</li>
+<li>The str type:<br>
+This is also a sequence of bytes, but Python knows how to interpret those bytes as characters.
+So, to conversion of an empty string into bytes, can be done with<br>
+<code>msg = bytes('', encoding = 'utf-8')</code></li>
+</ul>
+</li>
+</ol>
+<p>In this process I learnt that due to significant refactoring done in the latest version python <a href="https://github.com/vita-epfl/openpifpaf" target="_blank" rel="noopener noreffer">openpifpaf library</a> some functions also need to be changed accordingly in our component. So, I have made the component work with the openpifpaf library version = 0.10.1. The changes I needed to make were:</p>
+<ol>
+<li>I had to change the line:<br>
+<code>processed_image_cpu = transforms.image_transform(image.copy())</code><br>
+in <a href="https://github.com/robocomp/human-detection/blob/master/components/openpifpafserver/src/specificworker.py" target="_blank" rel="noopener noreffer">specificworker.py</a> to:<br>
+<code>processed_image_cpu, _, __ = transforms.EVAL_TRANSFORM(image_pil, [], None)</code><br>
+because <code>image_transform</code> is no longer in <code>openpifpaf.transforms.</code></li>
+<li>I also had to convert the image to a PIL image before passing it throught the function mentioned above from a CV2 image as the function only accepts PIL image with the following:
+<code>image_pil = PIL.Image.fromarray(image)</code></li>
+</ol>
+<p>There is another small bug which needs to be fixed. I will update that soon!!</p>
 <h5 id="status-in-progress">Status: In-progress</h5>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
