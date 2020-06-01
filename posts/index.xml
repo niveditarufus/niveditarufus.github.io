@@ -3,7 +3,7 @@
         <title>All Posts - Nivedita Rufus</title>
         <link>https://niveditarufus.github.io/posts/</link>
         <description>All Posts | Nivedita Rufus</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 25 May 2020 20:46:07 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 01 Jun 2020 15:44:26 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>About Me</title>
     <link>https://niveditarufus.github.io/posts/about-me/</link>
     <pubDate>Mon, 11 May 2020 20:48:48 &#43;0530</pubDate>
@@ -17,6 +17,14 @@
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/before-gsoc/</guid>
     <description><![CDATA[I had decided that I want to participate in GSoC 2020 sometime around September 2019. This is quite early 😂, considering that there were still five months for the organizations to be announced. But, I still went through the organizations that participated in GSoC, 2019. I knew that I would be very comfortable working with robotics-related projects. So, I looked through the organizations which had projects in this field. I also followed through and tried to understand as much as I can the projects undertaken by each of the organizations.]]></description>
+</item><item>
+    <title>Contribution 5: My Baseline</title>
+    <link>https://niveditarufus.github.io/posts/mybaseline/</link>
+    <pubDate>Mon, 01 Jun 2020 15:44:26 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/mybaseline/</guid>
+    <description><![CDATA[The project phase has started. I have made a standalone standalone python project to count people which will be my baseline to test different methods. You can find it here. This is a refactored version of the existing PeopleCounter module of RoboComp. Once, the most suited method is chosen, I will integrate it with RoboComp architecture which forms the final stage of the project.
+  A short demo   So there, two ways to count people inside a building:]]></description>
 </item><item>
     <title>Project Phase - The Onset </title>
     <link>https://niveditarufus.github.io/posts/project-phase/</link>
