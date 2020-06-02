@@ -18,13 +18,35 @@
     <guid>https://niveditarufus.github.io/posts/before-gsoc/</guid>
     <description><![CDATA[I had decided that I want to participate in GSoC 2020 sometime around September 2019. This is quite early 😂, considering that there were still five months for the organizations to be announced. But, I still went through the organizations that participated in GSoC, 2019. I knew that I would be very comfortable working with robotics-related projects. So, I looked through the organizations which had projects in this field. I also followed through and tried to understand as much as I can the projects undertaken by each of the organizations.]]></description>
 </item><item>
-    <title>Contribution 5: My Baseline</title>
-    <link>https://niveditarufus.github.io/posts/mybaseline/</link>
-    <pubDate>Mon, 01 Jun 2020 15:44:26 &#43;0530</pubDate>
+    <title>Contribution 1: My First Bug Fix</title>
+    <link>https://niveditarufus.github.io/posts/my-first-bug-fix/</link>
+    <pubDate>Tue, 12 May 2020 21:03:58 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/mybaseline/</guid>
-    <description><![CDATA[The project phase has started. I have made a standalone standalone python project to count people which will be my baseline to test different methods. You can find it here. This is a refactored version of the existing PeopleCounter module of RoboComp. Once, the most suited method is chosen, I will integrate it with RoboComp architecture which forms the final stage of the project.
-  A short demo   So there, two ways to count people inside a building:]]></description>
+    <guid>https://niveditarufus.github.io/posts/my-first-bug-fix/</guid>
+    <description><![CDATA[This post is about my very first bug fix in RoboComp&rsquo;s human-detection repository. Everybody starts with a very small bug, so did I. I found this issue on March 16(before the student application deadline) when I was trying to get the PeopleCounter module working on my PC. I realized that there was a line missing in the config file that hosts the People Server. I also found that a path to MobileNetSSD_deploy.]]></description>
+</item><item>
+    <title>Contribution 2: Fixing import errors</title>
+    <link>https://niveditarufus.github.io/posts/contribution-2/</link>
+    <pubDate>Tue, 12 May 2020 21:35:34 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/contribution-2/</guid>
+    <description><![CDATA[I found this issue because I was still unable to get the PeopleCounter component working. It raised an import error there where some functions imported from the resources directory, which is outside the working directory. My commit ensures that the python modules are imported properly. I had made a pull-request for them the same which is still under review. I will update this post once the status changes.
+Status: Under Review ]]></description>
+</item><item>
+    <title>Contribution 3: Fixing default parameter values</title>
+    <link>https://niveditarufus.github.io/posts/contribution-3/</link>
+    <pubDate>Tue, 12 May 2020 21:51:16 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/contribution-3/</guid>
+    <description><![CDATA[I had submitted a pull-request to update the file specificworker.py in the component openpifpafserver. These added lines are some parameters which are in the file and not specifying these values lead to Attribute errors. I initialized all these parameters to the default values specified in the openpifpaf package. I belive this should solve the issue. This pull-request is still under review and I will update the post when the status changes.]]></description>
+</item><item>
+    <title>Contribution 4: Porting to Python 3 and changes that is required because of refactoring in the existing python library</title>
+    <link>https://niveditarufus.github.io/posts/contribution-4/</link>
+    <pubDate>Sun, 17 May 2020 15:02:35 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/contribution-4/</guid>
+    <description><![CDATA[After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much obvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3 which is done. Changes made are:
+ Changed all print statements from print &quot; &quot; to print().]]></description>
 </item><item>
     <title>Project Phase - The Onset </title>
     <link>https://niveditarufus.github.io/posts/project-phase/</link>
@@ -35,34 +57,12 @@
  CSRnet SS-DCNet Deep SORT
 I am in the process of setting up necessary environments for each of the methods.]]></description>
 </item><item>
-    <title>Contribution 4: Porting to Python 3 and changes that is required because of refactoring in the existing python library</title>
-    <link>https://niveditarufus.github.io/posts/contribution-4/</link>
-    <pubDate>Sun, 17 May 2020 15:02:35 &#43;0530</pubDate>
+    <title>Contribution 5: My Baseline</title>
+    <link>https://niveditarufus.github.io/posts/mybaseline/</link>
+    <pubDate>Mon, 01 Jun 2020 15:44:26 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/contribution-4/</guid>
-    <description><![CDATA[After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much obvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3 which is done. Changes made are:
- Changed all print statements from print &quot; &quot; to print().]]></description>
-</item><item>
-    <title>Contribution 3: Fixing default parameter values</title>
-    <link>https://niveditarufus.github.io/posts/contribution-3/</link>
-    <pubDate>Tue, 12 May 2020 21:51:16 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/contribution-3/</guid>
-    <description><![CDATA[I had submitted a pull-request to update the file specificworker.py in the component openpifpafserver. These added lines are some parameters which are in the file and not specifying these values lead to Attribute errors. I initialized all these parameters to the default values specified in the openpifpaf package. I belive this should solve the issue. This pull-request is still under review and I will update the post when the status changes.]]></description>
-</item><item>
-    <title>Contribution 2: Fixing import errors</title>
-    <link>https://niveditarufus.github.io/posts/contribution-2/</link>
-    <pubDate>Tue, 12 May 2020 21:35:34 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/contribution-2/</guid>
-    <description><![CDATA[I found this issue because I was still unable to get the PeopleCounter component working. It raised an import error there where some functions imported from the resources directory, which is outside the working directory. My commit ensures that the python modules are imported properly. I had made a pull-request for them the same which is still under review. I will update this post once the status changes.
-Status: Under Review ]]></description>
-</item><item>
-    <title>Contribution 1: My First Bug Fix</title>
-    <link>https://niveditarufus.github.io/posts/my-first-bug-fix/</link>
-    <pubDate>Tue, 12 May 2020 21:03:58 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/my-first-bug-fix/</guid>
-    <description><![CDATA[This post is about my very first bug fix in RoboComp&rsquo;s human-detection repository. Everybody starts with a very small bug, so did I. I found this issue on March 16(before the student application deadline) when I was trying to get the PeopleCounter module working on my PC. I realized that there was a line missing in the config file that hosts the People Server. I also found that a path to MobileNetSSD_deploy.]]></description>
+    <guid>https://niveditarufus.github.io/posts/mybaseline/</guid>
+    <description><![CDATA[The project phase has started. I have made a standalone standalone python project to count people which will be my baseline to test different methods. You can find it here. This is a refactored version of the existing PeopleCounter module of RoboComp. Once, the most suited method is chosen, I will integrate it with RoboComp architecture which forms the final stage of the project.
+  A short demo   So there, two ways to count people inside a building:]]></description>
 </item></channel>
 </rss>
