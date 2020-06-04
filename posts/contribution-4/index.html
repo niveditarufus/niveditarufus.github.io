@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/niveditarufus.github.io\/posts\/contribution-4\/"
-        },"genre": "posts","wordcount":  281 ,
+        },"genre": "posts","wordcount":  306 ,
         "url": "https:\/\/niveditarufus.github.io\/posts\/contribution-4\/","datePublished": "2020-05-17T15:02:35+05:30","dateModified": "2020-05-17T15:02:35+05:30","author": {
                 "@type": "Person",
                 "name": "Nivedita Rufus"
@@ -78,7 +78,7 @@
         </div><article class="page single"><h1 class="single-title animated flipInX">Contribution 4: Porting to Python 3 and changes that is required because of refactoring in the existing python library</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nivedita Rufus</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-05-17>2020-05-17</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>about 281 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>about 306 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>2 min&nbsp;</div>
         </div><div class="details toc" id="toc-static">
                 <div class="details-summary toc-title">
@@ -116,12 +116,12 @@ So, to conversion of an empty string into bytes, can be done with<br>
 <code>processed_image_cpu = transforms.image_transform(image.copy())</code><br>
 in <a href="https://github.com/robocomp/human-detection/blob/master/components/openpifpafserver/src/specificworker.py" target="_blank" rel="noopener noreffer">specificworker.py</a> to:<br>
 <code>processed_image_cpu, _, __ = transforms.EVAL_TRANSFORM(image_pil, [], None)</code><br>
-because <code>image_transform</code> is no longer in <code>openpifpaf.transforms.</code></li>
+because <code>image_transform</code> is no longer in <code>openpifpaf.transforms.</code> because of the version update of OpenpifPaf Library.</li>
 <li>I also had to convert the image to a PIL image before passing it throught the function mentioned above from a CV2 image as the function only accepts PIL image with the following:
 <code>image_pil = PIL.Image.fromarray(image)</code></li>
 </ol>
-<p>There is another small bug that needs to be fixed. I will update that soon!!</p>
-<h5 id="status-in-progress">Status: In-progress</h5>
+<p>There were also a few very minor bugs which I fixed. So Now the component is up and running and I have made <a href="https://github.com/robocomp/human-detection/pull/5" target="_blank" rel="noopener noreffer">Pull-request</a> for the same, do check it out!!!</p>
+<h5 id="status-under-review">Status: Under Review</h5>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
