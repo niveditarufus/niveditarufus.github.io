@@ -3,7 +3,7 @@
         <title>Nivedita Rufus</title>
         <link>https://niveditarufus.github.io/</link>
         <description>Nivedita Rufus</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 01 Jun 2020 15:44:26 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 05 Jun 2020 22:39:07 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/" rel="self" type="application/rss+xml" /><item>
     <title>About Me</title>
     <link>https://niveditarufus.github.io/posts/about-me/</link>
     <pubDate>Mon, 11 May 2020 20:48:48 &#43;0530</pubDate>
@@ -64,5 +64,13 @@ I am in the process of setting up necessary environments for each of the methods
     <guid>https://niveditarufus.github.io/posts/mybaseline/</guid>
     <description><![CDATA[The project phase has started. I have made a standalone standalone python project to count people which will be my baseline to test different methods. You can find it here. This is a refactored version of the existing PeopleCounter module of RoboComp. Once, the most suited method is chosen, I will integrate it with RoboComp architecture which forms the final stage of the project.
   A short demo   So there, two ways to count people inside a building:]]></description>
+</item><item>
+    <title>Comparison of methods</title>
+    <link>https://niveditarufus.github.io/posts/comparison/</link>
+    <pubDate>Fri, 05 Jun 2020 22:39:07 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/comparison/</guid>
+    <description><![CDATA[In my earlier post, I had mentioned two approaches to count people. So, I have gone through the proposed methods namely:
+ CSRNet SS-DCNet Deep-SORT  As I have already mentioned, CSRNet and SS-DCNet are suited to cases when we have footage that is from within the room by keeping a running count of the number of people in the room frame-by-frame. Both these networks work well for densely crowded places.]]></description>
 </item></channel>
 </rss>
