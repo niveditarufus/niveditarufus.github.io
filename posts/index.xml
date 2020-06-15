@@ -3,7 +3,7 @@
         <title>All Posts - Nivedita Rufus</title>
         <link>https://niveditarufus.github.io/posts/</link>
         <description>All Posts | Nivedita Rufus</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 05 Jun 2020 22:39:07 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 Jun 2020 21:54:49 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>About Me</title>
     <link>https://niveditarufus.github.io/posts/about-me/</link>
     <pubDate>Mon, 11 May 2020 20:48:48 &#43;0530</pubDate>
@@ -72,5 +72,12 @@ I am in the process of setting up necessary environments for each of the methods
     <guid>https://niveditarufus.github.io/posts/comparison/</guid>
     <description><![CDATA[In my earlier post, I had mentioned two approaches to count people. So, I have gone through the proposed methods namely:
  CSRNet SS-DCNet Deep-SORT  As I have already mentioned, CSRNet and SS-DCNet are suited to cases when we have footage that is from within the room by keeping a running count of the number of people in the room frame-by-frame. Both these networks work well for densely crowded places.]]></description>
+</item><item>
+    <title>Contribution 6: Crowd Counting From Single View</title>
+    <link>https://niveditarufus.github.io/posts/crowdcountingfromsingleview/</link>
+    <pubDate>Mon, 15 Jun 2020 21:54:49 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/crowdcountingfromsingleview/</guid>
+    <description><![CDATA[I have successfully completed the first milestone of my GSoC which was to count people present in the scene given a video feed using existing deep Net models. In my earlier post, I had mentioned that I will be going foreward with the SS-DCNet model due the advantages which I had discussed. I have used the models that were trained the Shanghai Dataset(A, B) and QRNF dataset by the authors of the SS-DCNet paper(ICCV 2019).]]></description>
 </item></channel>
 </rss>
