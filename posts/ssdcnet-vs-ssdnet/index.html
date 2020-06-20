@@ -5,29 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Contribution 6: Crowd Counting From Single View with SSDCNet - Nivedita Rufus</title><meta name="Description" content=""><meta property="og:title" content="Contribution 6: Crowd Counting From Single View with SSDCNet" />
-<meta property="og:description" content="I have successfully completed the first milestone of my GSoC which was to count people present in the scene given a video feed using existing deep Net models. In my earlier post, I had mentioned that I will be going foreward with the SS-DCNet model due the advantages which I had discussed. I have used the models that were trained the Shanghai Dataset(A, B) and QRNF dataset by the authors of the SS-DCNet paper(ICCV 2019)." />
+        <title>SSDCNet vs SSDNet - Nivedita Rufus</title><meta name="Description" content=""><meta property="og:title" content="SSDCNet vs SSDNet" />
+<meta property="og:description" content="In my earlier post, I had mentioned that the people counter based on the SSDCNet model fails sometimes when the place is very scarcely populated. So I compared its performance with a counter based on the SSDNet model. Given below is an example of footage of 18 people (SALSA dataset).   With SS-DCNet based counter     With SSDNet based counter   We can see that the SSDCNet based counter performs better in comparison with the SSD based approach." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://niveditarufus.github.io/posts/crowdcountingfromsingleview/" />
-<meta property="article:published_time" content="2020-06-15T21:54:49+05:30" />
-<meta property="article:modified_time" content="2020-06-15T21:54:49+05:30" />
+<meta property="og:url" content="https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/" />
+<meta property="article:published_time" content="2020-06-20T15:27:24+05:30" />
+<meta property="article:modified_time" content="2020-06-20T15:27:24+05:30" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Contribution 6: Crowd Counting From Single View with SSDCNet"/>
-<meta name="twitter:description" content="I have successfully completed the first milestone of my GSoC which was to count people present in the scene given a video feed using existing deep Net models. In my earlier post, I had mentioned that I will be going foreward with the SS-DCNet model due the advantages which I had discussed. I have used the models that were trained the Shanghai Dataset(A, B) and QRNF dataset by the authors of the SS-DCNet paper(ICCV 2019)."/>
+<meta name="twitter:title" content="SSDCNet vs SSDNet"/>
+<meta name="twitter:description" content="In my earlier post, I had mentioned that the people counter based on the SSDCNet model fails sometimes when the place is very scarcely populated. So I compared its performance with a counter based on the SSDNet model. Given below is an example of footage of 18 people (SALSA dataset).   With SS-DCNet based counter     With SSDNet based counter   We can see that the SSDCNet based counter performs better in comparison with the SSD based approach."/>
 <meta name="application-name" content="Nivedita Rufus">
 <meta name="apple-mobile-web-app-title" content="Nivedita Rufus"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/crowdcountingfromsingleview/" /><link rel="prev" href="https://niveditarufus.github.io/posts/comparison/" /><link rel="next" href="https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/" /><link rel="prev" href="https://niveditarufus.github.io/posts/crowdcountingfromsingleview/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Contribution 6: Crowd Counting From Single View with SSDCNet",
+        "headline": "SSDCNet vs SSDNet",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/niveditarufus.github.io\/posts\/crowdcountingfromsingleview\/"
-        },"genre": "posts","wordcount":  249 ,
-        "url": "https:\/\/niveditarufus.github.io\/posts\/crowdcountingfromsingleview\/","datePublished": "2020-06-15T21:54:49+05:30","dateModified": "2020-06-15T21:54:49+05:30","publisher": {
+            "@id": "https:\/\/niveditarufus.github.io\/posts\/ssdcnet-vs-ssdnet\/"
+        },"genre": "posts","wordcount":  154 ,
+        "url": "https:\/\/niveditarufus.github.io\/posts\/ssdcnet-vs-ssdnet\/","datePublished": "2020-06-20T15:27:24+05:30","dateModified": "2020-06-20T15:27:24+05:30","publisher": {
             "@type": "Organization",
             "name": "Nivedita Rufus"},"author": {
                 "@type": "Person",
@@ -71,26 +71,36 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Contribution 6: Crowd Counting From Single View with SSDCNet</h1><div class="post-meta">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">SSDCNet vs SSDNet</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nivedita Rufus</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-06-15">2020-06-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;249 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
-        </div><div class="content" id="content"><p>I have successfully completed the first milestone of my GSoC which was to count people present in the scene given a video feed using existing deep Net models. In my earlier <a href="https://niveditarufus.github.io/posts/comparison/" target="_blank" rel="noopener noreffer">post</a>, I had mentioned that I will be going foreward with the SS-DCNet model due the advantages which I had discussed. I have used the models that were trained the Shanghai Dataset(A, B) and QRNF dataset by the authors of the <a href="https://arxiv.org/abs/2001.01886" target="_blank" rel="noopener noreffer">SS-DCNet paper(ICCV 2019)</a>. This is the link to my <a href="https://github.com/niveditarufus/PeopleCounter-SSDCNet" target="_blank" rel="noopener noreffer">repository</a>. The inputs are one of the three pretrained models and a video file(which may be a URL or a file stored in the videos folder of the repository). In the event that a video is not not supplied a reference to the webcam will be grabbed.<br>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-06-20">2020-06-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;154 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="content" id="content"><p>In my earlier <a href="https://niveditarufus.github.io/posts/crowdcountingfromsingleview/" target="_blank" rel="noopener noreffer">post</a>, I had mentioned that the people counter based on the SSDCNet model fails sometimes when the place is very scarcely populated. So I compared its performance with a counter based on the SSDNet model.
+Given below is an example of footage of 18 people (<a href="https://tev.fbk.eu/salsa" target="_blank" rel="noopener noreffer">SALSA dataset</a>).
 <figure>
-    <img src="/images/CrowdCountingFromSingleView/example.jpg"/> <figcaption>
-            <h4>An example of the of the People Counter employed through SS-DCNet</h4>
+    <img src="/images/SSDCNet-vs-SSDNet/SSDCNet.gif"/> <figcaption>
+            <h4>With SS-DCNet based counter</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="/images/SSDCNet-vs-SSDNet/SSDNet.gif"/> <figcaption>
+            <h4>With SSDNet based counter</h4>
         </figcaption>
 </figure>
 </p>
-<h6 id="observations">Observations:</h6>
-<p>The SS-DCNet fails sometimes when the number of people in the scene is say 2 or 3 as it is trained on overcrowded datasets. This may resolved if we train the network to perform in the setting in which we want to count the people or have a model that is suited to scarcely populated images whenever the SS-DCNet returns a count less than some given threshold. Another possible solution is to have a some filtering techniques to smooth out sudden jumps which seem unrealistic in a continuous video feed.
-This I will try to resolve in the coming weeks on the advise of my mentors.</p>
+<p>We can see that the SSDCNet based counter performs better in comparison with the SSD based approach. SSDCNet is more effective when people are huddled together while SSDNet base approach fails to recognize people. But when the place is scarcely populated(&lt; 3) people are being able to get properly classified, so, SSDNet performs better.</p>
+<h6 id="possible-solutions-to-improve-the-performance-of-ssdcnet">Possible solutions to improve the performance of SSDCNet:</h6>
+<ol>
+<li>Train SSDCNet on a similar setting where it needs to be used.</li>
+<li>Use some filtering techniques to smooth out unrealistic jumps in the no. of people in a continuous video feed.</li>
+</ol>
 <h5 id="status-under-review">Status: Under Review</h5>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2020-06-15</span>
+                <span>Updated on 2020-06-20</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -109,8 +119,7 @@ This I will try to resolve in the coming weeks on the advise of my mentors.</p>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/comparison/" class="prev" rel="prev" title="Comparison of methods"><i class="fas fa-angle-left fa-fw"></i>Comparison of methods</a>
-            <a href="/posts/ssdcnet-vs-ssdnet/" class="next" rel="next" title="SSDCNet vs SSDNet">SSDCNet vs SSDNet<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/posts/crowdcountingfromsingleview/" class="prev" rel="prev" title="Contribution 6: Crowd Counting From Single View with SSDCNet"><i class="fas fa-angle-left fa-fw"></i>Contribution 6: Crowd Counting From Single View with SSDCNet</a></div>
 </div>
 </article></div>
             </main><footer class="footer">

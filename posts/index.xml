@@ -3,8 +3,15 @@
         <title>All Posts - Nivedita Rufus</title>
         <link>https://niveditarufus.github.io/posts/</link>
         <description>All Posts | Nivedita Rufus</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 Jun 2020 21:54:49 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Contribution 6: Crowd Counting From Single View</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2020 15:27:24 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>SSDCNet vs SSDNet</title>
+    <link>https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/</link>
+    <pubDate>Sat, 20 Jun 2020 15:27:24 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/</guid>
+    <description><![CDATA[In my earlier post, I had mentioned that the people counter based on the SSDCNet model fails sometimes when the place is very scarcely populated. So I compared its performance with a counter based on the SSDNet model. Given below is an example of footage of 18 people (SALSA dataset).   With SS-DCNet based counter     With SSDNet based counter   We can see that the SSDCNet based counter performs better in comparison with the SSD based approach.]]></description>
+</item><item>
+    <title>Contribution 6: Crowd Counting From Single View with SSDCNet</title>
     <link>https://niveditarufus.github.io/posts/crowdcountingfromsingleview/</link>
     <pubDate>Mon, 15 Jun 2020 21:54:49 &#43;0530</pubDate>
     <author>Author</author>
@@ -72,12 +79,5 @@ Status: Under Review ]]></description>
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/before-gsoc/</guid>
     <description><![CDATA[I had decided that I want to participate in GSoC 2020 sometime around September 2019. This is quite early 😂, considering that there were still five months for the organizations to be announced. But, I still went through the organizations that participated in GSoC, 2019. I knew that I would be very comfortable working with robotics-related projects. So, I looked through the organizations which had projects in this field. I also followed through and tried to understand as much as I can the projects undertaken by each of the organizations.]]></description>
-</item><item>
-    <title>About Me</title>
-    <link>https://niveditarufus.github.io/posts/about-me/</link>
-    <pubDate>Mon, 11 May 2020 20:48:48 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/about-me/</guid>
-    <description><![CDATA[I am Nivedita Rufus. I am an active researcher and very passionate about Robotics. So, owing to my passion I primarily work with ‘Self-Driving Cars’ which is also part of my research work at IIIT- Hyderabad, India. I am also a GSoC'20 intern at RoboComp and will be working on the project “Software agent for estimating occupancy in medium and large buildings using RGB cameras”. This blog will be mostly about my GSoC journey.]]></description>
 </item></channel>
 </rss>
