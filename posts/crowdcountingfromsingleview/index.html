@@ -17,7 +17,7 @@
 <meta name="application-name" content="Nivedita Rufus">
 <meta name="apple-mobile-web-app-title" content="Nivedita Rufus"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/crowdcountingfromsingleview/" /><link rel="next" href="https://niveditarufus.github.io/posts/comparison/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/crowdcountingfromsingleview/" /><link rel="prev" href="https://niveditarufus.github.io/posts/comparison/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -71,28 +71,11 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Contribution 6: Crowd Counting From Single View</h1><div class="post-meta">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Contribution 6: Crowd Counting From Single View</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nivedita Rufus</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-06-15">2020-06-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;226 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><p>I have successfully completed the first milestone of my GSoC which was to count people present in the scene given a video feed using existing deep Net models. In my earlier <a href="https://niveditarufus.github.io/posts/comparison/" target="_blank" rel="noopener noreffer">post</a>, I had mentioned that I will be going foreward with the SS-DCNet model due the advantages which I had discussed. I have used the models that were trained the Shanghai Dataset(A, B) and QRNF dataset by the authors of the <a href="https://arxiv.org/abs/2001.01886" target="_blank" rel="noopener noreffer">SS-DCNet paper(ICCV 2019)</a>. This is the link to my <a href="https://github.com/niveditarufus/PeopleCounter-SSDCNet" target="_blank" rel="noopener noreffer">repository</a>. The inputs are one of the three pretrained models and a video file(which may be a URL or a file stored in the videos folder of the repository). In the event that a video is not not supplied a reference to the webcam will be grabbed.<br>
+        </div><div class="content" id="content"><p>I have successfully completed the first milestone of my GSoC which was to count people present in the scene given a video feed using existing deep Net models. In my earlier <a href="https://niveditarufus.github.io/posts/comparison/" target="_blank" rel="noopener noreffer">post</a>, I had mentioned that I will be going foreward with the SS-DCNet model due the advantages which I had discussed. I have used the models that were trained the Shanghai Dataset(A, B) and QRNF dataset by the authors of the <a href="https://arxiv.org/abs/2001.01886" target="_blank" rel="noopener noreffer">SS-DCNet paper(ICCV 2019)</a>. This is the link to my <a href="https://github.com/niveditarufus/PeopleCounter-SSDCNet" target="_blank" rel="noopener noreffer">repository</a>. The inputs are one of the three pretrained models and a video file(which may be a URL or a file stored in the videos folder of the repository). In the event that a video is not not supplied a reference to the webcam will be grabbed.<br>
 <figure>
     <img src="/images/CrowdCountingFromSingleView/example.jpg"/> <figcaption>
             <h4>An example of the of the People Counter employed through SS-DCNet</h4>
@@ -126,8 +109,7 @@ This I will try to resolve in the coming weeks on the advise of my mentors.</p>
         </section>
     </div>
 
-    <div class="post-nav">
-            <a href="/posts/comparison/" class="next" rel="next" title="Comparison of methods">Comparison of methods<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/posts/comparison/" class="prev" rel="prev" title="Comparison of methods"><i class="fas fa-angle-left fa-fw"></i>Comparison of methods</a></div>
 </div>
 </article></div>
             </main><footer class="footer">
