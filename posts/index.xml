@@ -3,7 +3,14 @@
         <title>All Posts - Nivedita Rufus</title>
         <link>https://niveditarufus.github.io/posts/</link>
         <description>All Posts | Nivedita Rufus</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Jun 2020 15:27:24 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 29 Jun 2020 14:55:41 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Contribution 7: Filtering Methods</title>
+    <link>https://niveditarufus.github.io/posts/filtering-methods/</link>
+    <pubDate>Mon, 29 Jun 2020 14:55:41 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/filtering-methods/</guid>
+    <description><![CDATA[This will be my last post for the first phase of my GSoC journey. I had promised to deliver a working module that returns the count of people from a single view through a continuous video feed. From my earlier post, you might have seen the challenges I had faced and the solutions I had proposed. I had mentioned that use of filtering techniques may help smooth out unrealistic jumps in a continuous video feed, I had resorted to two major methods which proved to improve the performance of the count values return with the SS-DCNet model namely,]]></description>
+</item><item>
     <title>SSDCNet vs SSDNet</title>
     <link>https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/</link>
     <pubDate>Sat, 20 Jun 2020 15:27:24 &#43;0530</pubDate>
@@ -72,12 +79,5 @@ Status: Under Review ]]></description>
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/my-first-bug-fix/</guid>
     <description><![CDATA[This post is about my very first bug fix in RoboComp&rsquo;s human-detection repository. Everybody starts with a very small bug, so did I. I found this issue on March 16(before the student application deadline) when I was trying to get the PeopleCounter module working on my PC. I realized that there was a line missing in the config file that hosts the People Server. I also found that a path to MobileNetSSD_deploy.]]></description>
-</item><item>
-    <title>Before GSoC &#39;20</title>
-    <link>https://niveditarufus.github.io/posts/before-gsoc/</link>
-    <pubDate>Mon, 11 May 2020 20:48:48 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/before-gsoc/</guid>
-    <description><![CDATA[I had decided that I want to participate in GSoC 2020 sometime around September 2019. This is quite early 😂, considering that there were still five months for the organizations to be announced. But, I still went through the organizations that participated in GSoC, 2019. I knew that I would be very comfortable working with robotics-related projects. So, I looked through the organizations which had projects in this field. I also followed through and tried to understand as much as I can the projects undertaken by each of the organizations.]]></description>
 </item></channel>
 </rss>

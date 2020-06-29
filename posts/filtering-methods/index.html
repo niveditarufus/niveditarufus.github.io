@@ -5,29 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>SSDCNet vs SSDNet - Nivedita Rufus</title><meta name="Description" content=""><meta property="og:title" content="SSDCNet vs SSDNet" />
-<meta property="og:description" content="In my earlier post, I had mentioned that the people counter based on the SSDCNet model fails sometimes when the place is very scarcely populated. So I compared its performance with a counter based on the SSDNet model. Given below is an example of footage of 18 people (SALSA dataset).   With SS-DCNet based counter     With SSDNet based counter   We can see that the SSDCNet based counter performs better in comparison with the SSD based approach." />
+        <title>Contribution 7: Filtering Methods - Nivedita Rufus</title><meta name="Description" content=""><meta property="og:title" content="Contribution 7: Filtering Methods" />
+<meta property="og:description" content="This will be my last post for the first phase of my GSoC journey. I had promised to deliver a working module that returns the count of people from a single view through a continuous video feed. From my earlier post, you might have seen the challenges I had faced and the solutions I had proposed. I had mentioned that use of filtering techniques may help smooth out unrealistic jumps in a continuous video feed, I had resorted to two major methods which proved to improve the performance of the count values return with the SS-DCNet model namely," />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/" />
-<meta property="article:published_time" content="2020-06-20T15:27:24+05:30" />
-<meta property="article:modified_time" content="2020-06-20T15:27:24+05:30" />
+<meta property="og:url" content="https://niveditarufus.github.io/posts/filtering-methods/" />
+<meta property="article:published_time" content="2020-06-29T14:55:41+05:30" />
+<meta property="article:modified_time" content="2020-06-29T14:55:41+05:30" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="SSDCNet vs SSDNet"/>
-<meta name="twitter:description" content="In my earlier post, I had mentioned that the people counter based on the SSDCNet model fails sometimes when the place is very scarcely populated. So I compared its performance with a counter based on the SSDNet model. Given below is an example of footage of 18 people (SALSA dataset).   With SS-DCNet based counter     With SSDNet based counter   We can see that the SSDCNet based counter performs better in comparison with the SSD based approach."/>
+<meta name="twitter:title" content="Contribution 7: Filtering Methods"/>
+<meta name="twitter:description" content="This will be my last post for the first phase of my GSoC journey. I had promised to deliver a working module that returns the count of people from a single view through a continuous video feed. From my earlier post, you might have seen the challenges I had faced and the solutions I had proposed. I had mentioned that use of filtering techniques may help smooth out unrealistic jumps in a continuous video feed, I had resorted to two major methods which proved to improve the performance of the count values return with the SS-DCNet model namely,"/>
 <meta name="application-name" content="Nivedita Rufus">
 <meta name="apple-mobile-web-app-title" content="Nivedita Rufus"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/" /><link rel="prev" href="https://niveditarufus.github.io/posts/crowdcountingfromsingleview/" /><link rel="next" href="https://niveditarufus.github.io/posts/filtering-methods/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/filtering-methods/" /><link rel="prev" href="https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "SSDCNet vs SSDNet",
+        "headline": "Contribution 7: Filtering Methods",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/niveditarufus.github.io\/posts\/ssdcnet-vs-ssdnet\/"
-        },"genre": "posts","wordcount":  154 ,
-        "url": "https:\/\/niveditarufus.github.io\/posts\/ssdcnet-vs-ssdnet\/","datePublished": "2020-06-20T15:27:24+05:30","dateModified": "2020-06-20T15:27:24+05:30","publisher": {
+            "@id": "https:\/\/niveditarufus.github.io\/posts\/filtering-methods\/"
+        },"genre": "posts","wordcount":  213 ,
+        "url": "https:\/\/niveditarufus.github.io\/posts\/filtering-methods\/","datePublished": "2020-06-29T14:55:41+05:30","dateModified": "2020-06-29T14:55:41+05:30","publisher": {
             "@type": "Organization",
             "name": "Nivedita Rufus"},"author": {
                 "@type": "Person",
@@ -71,36 +71,36 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">SSDCNet vs SSDNet</h1><div class="post-meta">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Contribution 7: Filtering Methods</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nivedita Rufus</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-06-20">2020-06-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;154 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-06-29">2020-06-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;213 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
-        </div><div class="content" id="content"><p>In my earlier <a href="https://niveditarufus.github.io/posts/crowdcountingfromsingleview/" target="_blank" rel="noopener noreffer">post</a>, I had mentioned that the people counter based on the SSDCNet model fails sometimes when the place is very scarcely populated. So I compared its performance with a counter based on the SSDNet model.
-Given below is an example of footage of 18 people (<a href="https://tev.fbk.eu/salsa" target="_blank" rel="noopener noreffer">SALSA dataset</a>).
+        </div><div class="content" id="content"><p>This will be my last post for the first phase of my GSoC journey. I had promised to deliver a working module that returns the count of people from a single view through a continuous video feed. From my earlier <a href="https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/" target="_blank" rel="noopener noreffer">post</a>, you might have seen the challenges I had faced and the solutions I had proposed. I had mentioned that use of filtering techniques may help smooth out unrealistic jumps in a continuous video feed, I had resorted to two major methods which proved to improve the performance of the count values return with the SS-DCNet model namely,</p>
+<ol>
+<li>1D Kalman Filter based approach</li>
+<li>A moving average based approach</li>
+</ol>
+<p>Both these methods can be used depending on the crowd density environment and in some cases, the count value returned by the SS-DCNet is itself pretty much good. I have analyzed both these methods with <a href="https://tev.fbk.eu/salsa" target="_blank" rel="noopener noreffer">SALSA dataset</a> which are shown below:
 <figure>
-    <img src="/images/SSDCNet-vs-SSDNet/SSDCNet.gif"/> <figcaption>
-            <h4>With SS-DCNet based counter</h4>
+    <img src="/images/Filtering-Methods/KalmanFilter.png"/> <figcaption>
+            <h4>Effect of Kalman Filter</h4>
         </figcaption>
 </figure>
 
 <figure>
-    <img src="/images/SSDCNet-vs-SSDNet/SSDNet.gif"/> <figcaption>
-            <h4>With SSDNet based counter</h4>
+    <img src="/images/Filtering-Methods/MovingAverage.png"/> <figcaption>
+            <h4>Effect of Moving Average</h4>
         </figcaption>
 </figure>
 </p>
-<p>We can see that the SSDCNet based counter performs better in comparison with the SSD based approach. SSDCNet is more effective when people are huddled together while SSDNet base approach fails to recognize people. But when the place is scarcely populated(&lt; 3) people are being able to get properly classified, so, SSDNet performs better.</p>
-<h6 id="possible-solutions-to-improve-the-performance-of-ssdcnet">Possible solutions to improve the performance of SSDCNet:</h6>
-<ol>
-<li>Train SSDCNet on a similar setting where it needs to be used.</li>
-<li>Use some filtering techniques to smooth out unrealistic jumps in the no. of people in a continuous video feed.</li>
-</ol>
+<p>I have also updated the <a href="https://github.com/niveditarufus/PeopleCounter-SSDCNet" target="_blank" rel="noopener noreffer">code</a> which now takes in an extra argument which is the filtering method.</p>
+<p>I am truly happy as the first phase of the project comes to a close and I really hope I have been able to do justice to it. Looking forward to the next phase!! 😃</p>
 <h5 id="status-under-review">Status: Under Review</h5>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2020-06-20</span>
+                <span>Updated on 2020-06-29</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -119,8 +119,7 @@ Given below is an example of footage of 18 people (<a href="https://tev.fbk.eu/s
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/crowdcountingfromsingleview/" class="prev" rel="prev" title="Contribution 6: Crowd Counting From Single View with SSDCNet"><i class="fas fa-angle-left fa-fw"></i>Contribution 6: Crowd Counting From Single View with SSDCNet</a>
-            <a href="/posts/filtering-methods/" class="next" rel="next" title="Contribution 7: Filtering Methods">Contribution 7: Filtering Methods<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/posts/ssdcnet-vs-ssdnet/" class="prev" rel="prev" title="SSDCNet vs SSDNet"><i class="fas fa-angle-left fa-fw"></i>SSDCNet vs SSDNet</a></div>
 </div>
 </article></div>
             </main><footer class="footer">
