@@ -40,7 +40,7 @@
     <pubDate>Mon, 01 Jun 2020 15:44:26 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/mybaseline/</guid>
-    <description><![CDATA[The project phase has started. I have made a standalone standalone python project to count people which will be my baseline to test different methods. You can find it here. This is a refactored version of the existing PeopleCounter module of RoboComp. Once, the most suited method is chosen, I will integrate it with RoboComp architecture which forms the final stage of the project.
+    <description><![CDATA[The project phase has started. I have made a standalone python project to count people which will be my baseline to test different methods. You can find it here. This is a refactored version of the existing PeopleCounter module of RoboComp. Once, the most suited method is chosen, I will integrate it with RoboComp architecture which forms the final stage of the project.
   A short demo   So there, two ways to count people inside a building:]]></description>
 </item><item>
     <title>Project Phase - The Onset </title>
