@@ -5,29 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>The Second Phase - Nivedita Rufus</title><meta name="Description" content=""><meta property="og:title" content="The Second Phase" />
-<meta property="og:description" content="I so pumped up right now because I passed the first evaluation and will be getting paid soon 😌😅. This has been a wonderful journey till now and I have no idea how the time passed so fast. Someone once said, &ldquo;Do what you love, you never have to work a day in your life&rdquo;, I guess I have seen the truth to this statement. I am extremely grateful to my mentors for giving me the freedom to explore many things in this endeavor and without even knowing it I have learned so much 😃." />
+        <title>Multi View People Counter - Nivedita Rufus</title><meta name="Description" content=""><meta property="og:title" content="Multi View People Counter" />
+<meta property="og:description" content="In one of my earlier posts, I had mentioned the preprocessing step for counting the number of people from multiple partially overlapping views. This step involves stitching of the images together to form a single image which is then passed into the counting module (code). This might result in a performance overhead compared to the normal case, this can be balanced by adjusting the skip_frames parameter in the code. The stitching algorithm used here is based on the publication." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://niveditarufus.github.io/posts/the-second-phase/" />
-<meta property="article:published_time" content="2020-07-05T12:51:51+05:30" />
-<meta property="article:modified_time" content="2020-07-05T12:51:51+05:30" />
+<meta property="og:url" content="https://niveditarufus.github.io/posts/multi-view-people-counter/" />
+<meta property="article:published_time" content="2020-07-10T14:45:47+05:30" />
+<meta property="article:modified_time" content="2020-07-10T14:45:47+05:30" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="The Second Phase"/>
-<meta name="twitter:description" content="I so pumped up right now because I passed the first evaluation and will be getting paid soon 😌😅. This has been a wonderful journey till now and I have no idea how the time passed so fast. Someone once said, &ldquo;Do what you love, you never have to work a day in your life&rdquo;, I guess I have seen the truth to this statement. I am extremely grateful to my mentors for giving me the freedom to explore many things in this endeavor and without even knowing it I have learned so much 😃."/>
+<meta name="twitter:title" content="Multi View People Counter"/>
+<meta name="twitter:description" content="In one of my earlier posts, I had mentioned the preprocessing step for counting the number of people from multiple partially overlapping views. This step involves stitching of the images together to form a single image which is then passed into the counting module (code). This might result in a performance overhead compared to the normal case, this can be balanced by adjusting the skip_frames parameter in the code. The stitching algorithm used here is based on the publication."/>
 <meta name="application-name" content="Nivedita Rufus">
 <meta name="apple-mobile-web-app-title" content="Nivedita Rufus"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/the-second-phase/" /><link rel="prev" href="https://niveditarufus.github.io/posts/filtering-methods/" /><link rel="next" href="https://niveditarufus.github.io/posts/multi-view-people-counter/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/multi-view-people-counter/" /><link rel="prev" href="https://niveditarufus.github.io/posts/the-second-phase/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "The Second Phase",
+        "headline": "Multi View People Counter",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/niveditarufus.github.io\/posts\/the-second-phase\/"
-        },"genre": "posts","wordcount":  124 ,
-        "url": "https:\/\/niveditarufus.github.io\/posts\/the-second-phase\/","datePublished": "2020-07-05T12:51:51+05:30","dateModified": "2020-07-05T12:51:51+05:30","publisher": {
+            "@id": "https:\/\/niveditarufus.github.io\/posts\/multi-view-people-counter\/"
+        },"genre": "posts","wordcount":  253 ,
+        "url": "https:\/\/niveditarufus.github.io\/posts\/multi-view-people-counter\/","datePublished": "2020-07-10T14:45:47+05:30","dateModified": "2020-07-10T14:45:47+05:30","publisher": {
             "@type": "Organization",
             "name": "Nivedita Rufus"},"author": {
                 "@type": "Person",
@@ -71,18 +71,43 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">The Second Phase</h1><div class="post-meta">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Multi View People Counter</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nivedita Rufus</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-05">2020-07-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;124 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
-        </div><div class="content" id="content"><p>I so pumped up right now because I passed the first evaluation and will be getting paid soon 😌😅. This has been a wonderful journey till now and I have no idea how the time passed so fast. Someone once said, &ldquo;Do what you love, you never have to work a day in your life&rdquo;, I guess I have seen the truth to this statement. I am extremely grateful to my mentors for giving me the freedom to explore many things in this endeavor and without even knowing it I have learned so much 😃.<br>
-I am looking forward to the next phase of my GSoC journey. I have started on some preliminary codes, so stay tuned for the results.</p>
-<h5 id="status-pumped-up-">Status: Pumped up 😎🔥🔥</h5>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-10">2020-07-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;253 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="content" id="content"><p>In one of my earlier <a href="https://niveditarufus.github.io/posts/comparison/" target="_blank" rel="noopener noreffer">posts</a>, I had mentioned the preprocessing step for counting the number of people from multiple partially overlapping views. This step involves stitching of the images together to form a single image which is then passed into the counting module (<a href="https://github.com/niveditarufus/PeopleCounter-SSDCNet" target="_blank" rel="noopener noreffer">code</a>). This might result in a performance overhead compared to the normal case, this can be balanced by adjusting the <code>skip_frames</code> parameter in the code. The stitching algorithm used here is based on the <a href="http://matthewalunbrown.com/papers/ijcv2007.pdf" target="_blank" rel="noopener noreffer">publication</a>. Unlike many image stitching algorithms that are sensitive to the order of input images, this method is not only insensitive to the order of the input images but also orientation and illumination changes.
+An example of the same is shown below:</p>
+<p><figure>
+    <img src="/images/Multi-View-People-Counter/image1.jpg"/> <figcaption>
+            <h4>Image 1</h4>
+        </figcaption>
+</figure>
+<br>
+<figure>
+    <img src="/images/Multi-View-People-Counter/image2.jpg"/> <figcaption>
+            <h4>Image 2</h4>
+        </figcaption>
+</figure>
+<br>
+<figure>
+    <img src="/images/Multi-View-People-Counter/stitched.jpg"/> <figcaption>
+            <h4>Stitched Image</h4>
+        </figcaption>
+</figure>
+</p>
+<p>The next step is to pass the stitched image into the counter module along with the SS-DCNet model and a filter method as suited to your requirement. One can immediately spot two obvious issues the preprocessing step, that is the performance overhead which can be overcome by adjusting some parameters and the second one is that this will work only for partially-overlapping views, i.e., the image captured by each camera should consist of the common area as well as some uncommon area. This cannot be applied to images captured from two corners of the room covering the entire room but having two different perspectives.<br>
+Given below is a short demo of this algorithm of counting image from the stitched image.<br>
+<figure>
+    <img src="/images/Multi-View-People-Counter/stitched.gif"/> <figcaption>
+            <h4>No. of people from the stitched Image</h4>
+        </figcaption>
+</figure>
+</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2020-07-05</span>
+                <span>Updated on 2020-07-10</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -101,8 +126,7 @@ I am looking forward to the next phase of my GSoC journey. I have started on som
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/filtering-methods/" class="prev" rel="prev" title="Contribution 7: Filtering Methods"><i class="fas fa-angle-left fa-fw"></i>Contribution 7: Filtering Methods</a>
-            <a href="/posts/multi-view-people-counter/" class="next" rel="next" title="Multi View People Counter">Multi View People Counter<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/posts/the-second-phase/" class="prev" rel="prev" title="The Second Phase"><i class="fas fa-angle-left fa-fw"></i>The Second Phase</a></div>
 </div>
 </article></div>
             </main><footer class="footer">
