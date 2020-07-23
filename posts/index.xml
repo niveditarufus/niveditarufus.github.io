@@ -3,13 +3,21 @@
         <title>All Posts - Nivedita Rufus</title>
         <link>https://niveditarufus.github.io/posts/</link>
         <description>All Posts | Nivedita Rufus</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Jul 2020 14:45:47 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 22 Jul 2020 16:48:57 &#43;0530</lastBuildDate><atom:link href="https://niveditarufus.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Image Stitching</title>
+    <link>https://niveditarufus.github.io/posts/image-stitching/</link>
+    <pubDate>Wed, 22 Jul 2020 16:48:57 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/image-stitching/</guid>
+    <description><![CDATA[In my previous post, I had mentioned a stitching algorithm that was supposed to be robust and insensitive to illumination changes. In this post, I verify the same. So I have implemented the standalone image stitcher here, where I change the illumination randomly(make the image dark, bright, hazy, etc) to verify the robustness of the stitcher.
+Given below is the result of the stitched video where each frame is randomly subjected to illumination changes (bright, dark, Haze):]]></description>
+</item><item>
     <title>Contribution 8: Multi View People Counter</title>
     <link>https://niveditarufus.github.io/posts/multi-view-people-counter/</link>
     <pubDate>Fri, 10 Jul 2020 14:45:47 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/multi-view-people-counter/</guid>
-    <description><![CDATA[In one of my earlier posts, I had mentioned the preprocessing step for counting the number of people from multiple partially overlapping views. This step involves stitching of the images together to form a single image which is then passed into the counting module (code). This might result in a performance overhead compared to the normal case, this can be balanced by adjusting the skip_frames parameter in the code. The stitching algorithm used here is based on the publication.]]></description>
+    <description><![CDATA[In one of my earlier posts, I had mentioned the preprocessing step for counting the number of people from multiple partially overlapping views. This step involves stitching of the images together to form a single image which is then passed into the counting module (code). This might result in a performance overhead compared to the normal case, this can be balanced by adjusting the skip_frames parameter in the code. The stitching algorithm used here is based on this publication.]]></description>
 </item><item>
     <title>The Second Phase</title>
     <link>https://niveditarufus.github.io/posts/the-second-phase/</link>
@@ -71,12 +79,5 @@ I am in the process of setting up necessary environments for each of the methods
     <guid>https://niveditarufus.github.io/posts/contribution-4/</guid>
     <description><![CDATA[After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much obvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3 which is done. Changes made are:
  Changed all print statements from print &quot; &quot; to print().]]></description>
-</item><item>
-    <title>Contribution 3: Fixing default parameter values</title>
-    <link>https://niveditarufus.github.io/posts/contribution-3/</link>
-    <pubDate>Tue, 12 May 2020 21:51:16 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/contribution-3/</guid>
-    <description><![CDATA[I had submitted a pull-request to update the file specificworker.py in the component openpifpafserver. These added lines are some parameters which are in the file and not specifying these values lead to Attribute errors. I initialized all these parameters to the default values specified in the openpifpaf package. I belive this should solve the issue. This pull-request is still under review and I will update the post when the status changes.]]></description>
 </item></channel>
 </rss>
