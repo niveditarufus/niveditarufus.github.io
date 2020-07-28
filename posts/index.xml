@@ -9,7 +9,7 @@
     <pubDate>Tue, 28 Jul 2020 12:21:44 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/majorityvoting/</guid>
-    <description><![CDATA[This is my last contribution to the second phase of my GSoC journey. Here, I have implemented the Boyer-Moore Majority Vote algorithm for video feeds from multiple cameras from different perspectives, i.e. for views shwnm below. (Image Source: SALSA dataset)   Camera: 1     Camera: 2     Camera: 3   As visualized from these images, stitching is not possible in this case as their perspectives are different.]]></description>
+    <description><![CDATA[This is my last contribution to the second phase of my GSoC journey. Here, I have implemented the Boyer-Moore Majority Vote algorithm for video feeds from multiple cameras from different perspectives, i.e. for views shown below. (Image Source: SALSA dataset)   Camera: 1     Camera: 2     Camera: 3   As visualized from these images, stitching is not possible in this case as their perspectives are different.]]></description>
 </item><item>
     <title>Image Stitching</title>
     <link>https://niveditarufus.github.io/posts/image-stitching/</link>
