@@ -5,31 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Image Stitching - Nivedita Rufus</title><meta name="Description" content=""><meta property="og:title" content="Image Stitching" />
-<meta property="og:description" content="In my previous post, I had mentioned a stitching algorithm that was supposed to be robust and insensitive to illumination changes. In this post, I verify the same. So I have implemented the standalone image stitcher here, where I change the illumination randomly(make the image dark, bright, hazy, etc) to verify the robustness of the stitcher.
-Given below is the result of the stitched video where each frame is randomly subjected to illumination changes (bright, dark, Haze):" />
+        <title>Contribution 9: Majority Voting - Nivedita Rufus</title><meta name="Description" content=""><meta property="og:title" content="Contribution 9: Majority Voting" />
+<meta property="og:description" content="This is my last contribution to the second phase of my GSoC journey. Here, I have implemented the Boyer-Moore Majority Vote algorithm for video feeds from multiple cameras from different perspectives, i.e. for views shwnm below. (Image Source: SALSA dataset)   Camera: 1     Camera: 2     Camera: 3   As visualized from these images, stitching is not possible in this case as their perspectives are different." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://niveditarufus.github.io/posts/image-stitching/" />
-<meta property="article:published_time" content="2020-07-22T16:48:57+05:30" />
-<meta property="article:modified_time" content="2020-07-22T16:48:57+05:30" />
+<meta property="og:url" content="https://niveditarufus.github.io/posts/majorityvoting/" />
+<meta property="article:published_time" content="2020-07-28T12:21:44+05:30" />
+<meta property="article:modified_time" content="2020-07-28T12:21:44+05:30" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Image Stitching"/>
-<meta name="twitter:description" content="In my previous post, I had mentioned a stitching algorithm that was supposed to be robust and insensitive to illumination changes. In this post, I verify the same. So I have implemented the standalone image stitcher here, where I change the illumination randomly(make the image dark, bright, hazy, etc) to verify the robustness of the stitcher.
-Given below is the result of the stitched video where each frame is randomly subjected to illumination changes (bright, dark, Haze):"/>
+<meta name="twitter:title" content="Contribution 9: Majority Voting"/>
+<meta name="twitter:description" content="This is my last contribution to the second phase of my GSoC journey. Here, I have implemented the Boyer-Moore Majority Vote algorithm for video feeds from multiple cameras from different perspectives, i.e. for views shwnm below. (Image Source: SALSA dataset)   Camera: 1     Camera: 2     Camera: 3   As visualized from these images, stitching is not possible in this case as their perspectives are different."/>
 <meta name="application-name" content="Nivedita Rufus">
 <meta name="apple-mobile-web-app-title" content="Nivedita Rufus"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/image-stitching/" /><link rel="prev" href="https://niveditarufus.github.io/posts/multi-view-people-counter/" /><link rel="next" href="https://niveditarufus.github.io/posts/majorityvoting/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/majorityvoting/" /><link rel="prev" href="https://niveditarufus.github.io/posts/image-stitching/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Image Stitching",
+        "headline": "Contribution 9: Majority Voting",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/niveditarufus.github.io\/posts\/image-stitching\/"
-        },"genre": "posts","wordcount":  112 ,
-        "url": "https:\/\/niveditarufus.github.io\/posts\/image-stitching\/","datePublished": "2020-07-22T16:48:57+05:30","dateModified": "2020-07-22T16:48:57+05:30","publisher": {
+            "@id": "https:\/\/niveditarufus.github.io\/posts\/majorityvoting\/"
+        },"genre": "posts","wordcount":  220 ,
+        "url": "https:\/\/niveditarufus.github.io\/posts\/majorityvoting\/","datePublished": "2020-07-28T12:21:44+05:30","dateModified": "2020-07-28T12:21:44+05:30","publisher": {
             "@type": "Organization",
             "name": "Nivedita Rufus"},"author": {
                 "@type": "Person",
@@ -73,25 +71,37 @@ Given below is the result of the stitched video where each frame is randomly sub
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Image Stitching</h1><div class="post-meta">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Contribution 9: Majority Voting</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nivedita Rufus</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-22">2020-07-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;112 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
-        </div><div class="content" id="content"><p>In my previous <a href="https://niveditarufus.github.io/posts/multi-view-people-counter/" target="_blank" rel="noopener noreffer">post</a>, I had mentioned a stitching algorithm that was supposed to be robust and insensitive to illumination changes. In this post, I verify the same. So I have implemented the standalone image stitcher <a href="https://github.com/niveditarufus/ImageStitching" target="_blank" rel="noopener noreffer">here</a>, where I change the illumination randomly(make the image dark, bright, hazy, etc) to verify the robustness of the stitcher.<br>
-Given below is the result of the stitched video where each frame is randomly subjected to illumination changes (bright, dark, Haze):<br>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-28">2020-07-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;220 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="content" id="content"><p>This is my last contribution to the second phase of my GSoC journey. Here, I have implemented the <a href="https://www.cs.utexas.edu/~moore/best-ideas/mjrty/" target="_blank" rel="noopener noreffer">Boyer-Moore Majority Vote algorithm</a> for video feeds from multiple cameras from different perspectives, i.e. for views shwnm below. (Image Source: <a href="https://tev.fbk.eu/salsa" target="_blank" rel="noopener noreffer">SALSA dataset</a>)
 <figure>
-    <img src="/images/Image-Stitching/stitchedVideo.gif"/> <figcaption>
-            <h4>Stitched Video</h4>
+    <img src="/images/MajorityVoting/cam1.jpg"/> <figcaption>
+            <h4>Camera: 1</h4>
         </figcaption>
 </figure>
 <br>
-It can be observed that the stitching Algorithm is immune to these changes and performed well. This can be used in various settings for the people Counter to work properly.</p>
-<h5 id="status-algorithm-verified">Status: Algorithm Verified</h5>
+<figure>
+    <img src="/images/MajorityVoting/cam2.jpg"/> <figcaption>
+            <h4>Camera: 2</h4>
+        </figcaption>
+</figure>
+<br>
+<figure>
+    <img src="/images/MajorityVoting/cam3.jpg"/> <figcaption>
+            <h4>Camera: 3</h4>
+        </figcaption>
+</figure>
+<br>
+As visualized from these images, stitching is not possible in this case as their perspectives are different. The Boyer-Moore Voting algorithm is briefly discussed here. This algorithm is O(n) in time and O(1) in space. The variables involved are a <em>current majority vote</em> and a <em>current majority vote counter</em>. These will be initialized to None/Null and 0 respectively. To find the majority vote, we iterate through each vote in the votes list. For every vote, we compare it to the current majority. If the counter is 0, we replace the current majority with the current vote. If the current vote matches the current majority, we increment the counter, otherwise, we decrement the counter.<br>
+This algorithm is implemented on the count values returned by the SS-DCNet Counter for each of the different perspective views to return the count value that forms the majority. If there is no clear majority, the element with the maximum count is returned and if all the elements are unique, the average of all count values is returned.</p>
+<h5 id="status-under-review">Status: Under Review</h5>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2020-07-22</span>
+                <span>Updated on 2020-07-28</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -110,8 +120,7 @@ It can be observed that the stitching Algorithm is immune to these changes and p
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/multi-view-people-counter/" class="prev" rel="prev" title="Contribution 8: Multi View People Counter"><i class="fas fa-angle-left fa-fw"></i>Contribution 8: Multi View People Counter</a>
-            <a href="/posts/majorityvoting/" class="next" rel="next" title="Contribution 9: Majority Voting">Contribution 9: Majority Voting<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/posts/image-stitching/" class="prev" rel="prev" title="Image Stitching"><i class="fas fa-angle-left fa-fw"></i>Image Stitching</a></div>
 </div>
 </article></div>
             </main><footer class="footer">

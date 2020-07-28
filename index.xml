@@ -3,9 +3,16 @@
         <title>Nivedita Rufus</title>
         <link>https://niveditarufus.github.io/</link>
         <description>Nivedita Rufus</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 22 Jul 2020 16:48:57 &#43;0530</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 28 Jul 2020 12:21:44 &#43;0530</lastBuildDate>
             <atom:link href="https://niveditarufus.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Contribution 9: Majority Voting</title>
+    <link>https://niveditarufus.github.io/posts/majorityvoting/</link>
+    <pubDate>Tue, 28 Jul 2020 12:21:44 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/majorityvoting/</guid>
+    <description><![CDATA[This is my last contribution to the second phase of my GSoC journey. Here, I have implemented the Boyer-Moore Majority Vote algorithm for video feeds from multiple cameras from different perspectives, i.e. for views shwnm below. (Image Source: SALSA dataset)   Camera: 1     Camera: 2     Camera: 3   As visualized from these images, stitching is not possible in this case as their perspectives are different.]]></description>
+</item><item>
     <title>Image Stitching</title>
     <link>https://niveditarufus.github.io/posts/image-stitching/</link>
     <pubDate>Wed, 22 Jul 2020 16:48:57 &#43;0530</pubDate>
@@ -73,13 +80,5 @@ Given below is the result of the stitched video where each frame is randomly sub
     <description><![CDATA[So the project phase is going to start in few days and I am so under the pump 😃. I had promised my mentors that I will look through existing methods that can be used to count and track people and find out which approach works better by testing all of them. The methods I want to look at are:
  CSRnet SS-DCNet Deep SORT
 I am in the process of setting up necessary environments for each of the methods.]]></description>
-</item><item>
-    <title>Contribution 4: Porting to Python 3 and and other changes</title>
-    <link>https://niveditarufus.github.io/posts/contribution-4/</link>
-    <pubDate>Sun, 17 May 2020 15:02:35 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/contribution-4/</guid>
-    <description><![CDATA[After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much obvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3 which is done. Changes made are:
- Changed all print statements from print &quot; &quot; to print().]]></description>
 </item></channel>
 </rss>
