@@ -3,9 +3,17 @@
         <title>Nivedita Rufus</title>
         <link>https://niveditarufus.github.io/</link>
         <description>Nivedita Rufus</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 28 Jul 2020 12:21:44 &#43;0530</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 04 Aug 2020 15:41:34 &#43;0530</lastBuildDate>
             <atom:link href="https://niveditarufus.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>The Final Phase</title>
+    <link>https://niveditarufus.github.io/posts/the-final-phase/</link>
+    <pubDate>Tue, 04 Aug 2020 15:41:34 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/the-final-phase/</guid>
+    <description><![CDATA[I am in the last leg of my GSoC journey. This has been an incredible experience so far. The amount of learning I have done is indeed incredible and is something to be really grateful for. Initially, I was quite anxious if would be able to deliver what I had promised. Now it looks like I would be able to more than that 😌😅.
+I am really looking forward to reaching the finish line smiling but at the same time a little sad that it would bring my GSoC journey to an end.]]></description>
+</item><item>
     <title>Contribution 9: Majority Voting</title>
     <link>https://niveditarufus.github.io/posts/majorityvoting/</link>
     <pubDate>Tue, 28 Jul 2020 12:21:44 &#43;0530</pubDate>
@@ -71,14 +79,5 @@ Given below is the result of the stitched video where each frame is randomly sub
     <guid>https://niveditarufus.github.io/posts/mybaseline/</guid>
     <description><![CDATA[The project phase has started. I have made a standalone python project to count people which will be my baseline to test different methods. You can find it here. This is a refactored version of the existing PeopleCounter module of RoboComp. Once, the most suited method is chosen, I will integrate it with RoboComp architecture which forms the final stage of the project.
   A short demo   So there, two ways to count people inside a building:]]></description>
-</item><item>
-    <title>Project Phase - The Onset </title>
-    <link>https://niveditarufus.github.io/posts/project-phase/</link>
-    <pubDate>Mon, 25 May 2020 20:46:07 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/project-phase/</guid>
-    <description><![CDATA[So the project phase is going to start in few days and I am so under the pump 😃. I had promised my mentors that I will look through existing methods that can be used to count and track people and find out which approach works better by testing all of them. The methods I want to look at are:
- CSRnet SS-DCNet Deep SORT
-I am in the process of setting up necessary environments for each of the methods.]]></description>
 </item></channel>
 </rss>
