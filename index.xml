@@ -3,9 +3,17 @@
         <title>Nivedita Rufus</title>
         <link>https://niveditarufus.github.io/</link>
         <description>Nivedita Rufus</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 04 Aug 2020 15:41:34 &#43;0530</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 10 Aug 2020 13:01:51 &#43;0530</lastBuildDate>
             <atom:link href="https://niveditarufus.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Contribution 10 Integration Into RoboComp Architecture</title>
+    <link>https://niveditarufus.github.io/posts/contribution-10-integration-into-robocomp-architecture/</link>
+    <pubDate>Mon, 10 Aug 2020 13:01:51 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/contribution-10-integration-into-robocomp-architecture/</guid>
+    <description><![CDATA[I feel really great as I am almost done with integrating the code into the RoboComp architecture. There are still a few things left like documentation and maybe a little code clean up. Over to the details.
+The ability to configure an application&rsquo;s properties externally provides a great deal of flexibility. One can use any combination of command-line options and configuration files to achieve the desired settings, all without having to modify source code of the application.]]></description>
+</item><item>
     <title>The Final Phase</title>
     <link>https://niveditarufus.github.io/posts/the-final-phase/</link>
     <pubDate>Tue, 04 Aug 2020 15:41:34 &#43;0530</pubDate>
@@ -71,13 +79,5 @@ Given below is the result of the stitched video where each frame is randomly sub
     <guid>https://niveditarufus.github.io/posts/comparison/</guid>
     <description><![CDATA[In my earlier post, I had mentioned two approaches to count people. So, I have gone through the proposed methods namely:
  CSRNet SS-DCNet Deep-SORT  As I have already mentioned, CSRNet and SS-DCNet are suited to cases when we have footage that is from within the room by keeping a running count of the number of people in the room frame-by-frame. Both these networks work well for densely crowded places.]]></description>
-</item><item>
-    <title>Contribution 5: My Baseline</title>
-    <link>https://niveditarufus.github.io/posts/mybaseline/</link>
-    <pubDate>Mon, 01 Jun 2020 15:44:26 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/mybaseline/</guid>
-    <description><![CDATA[The project phase has started. I have made a standalone python project to count people which will be my baseline to test different methods. You can find it here. This is a refactored version of the existing PeopleCounter module of RoboComp. Once, the most suited method is chosen, I will integrate it with RoboComp architecture which forms the final stage of the project.
-  A short demo   So there, two ways to count people inside a building:]]></description>
 </item></channel>
 </rss>
