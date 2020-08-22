@@ -6,71 +6,66 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 10 Aug 2020 13:01:51 &#43;0530</lastBuildDate>
             <atom:link href="https://niveditarufus.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Contribution 10: Integration Into RoboComp Architecture</title>
-    <link>https://niveditarufus.github.io/posts/contribution-10-integration-into-robocomp-architecture/</link>
-    <pubDate>Mon, 10 Aug 2020 13:01:51 &#43;0530</pubDate>
+    <title>About Me</title>
+    <link>https://niveditarufus.github.io/posts/about-me/</link>
+    <pubDate>Mon, 11 May 2020 20:48:48 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/contribution-10-integration-into-robocomp-architecture/</guid>
-    <description><![CDATA[I feel really great as I am almost done with integrating the code into the RoboComp architecture. There are still a few things left like documentation and maybe a little code clean up. Over to the details.
-The ability to configure an application&rsquo;s properties externally provides a great deal of flexibility. One can use any combination of command-line options and configuration files to achieve the desired settings, all without having to modify source code of the application.]]></description>
+    <guid>https://niveditarufus.github.io/posts/about-me/</guid>
+    <description><![CDATA[I am Nivedita Rufus. I am an active researcher and very passionate about Robotics. So, owing to my passion I primarily work with ‘Self-Driving Cars’ which is also part of my research work at IIIT- Hyderabad, India. I am also a GSoC'20 intern at RoboComp and will be working on the project “Software agent for estimating occupancy in medium and large buildings using RGB cameras”. This blog will be mostly about my GSoC journey.]]></description>
 </item><item>
-    <title>The Final Phase</title>
-    <link>https://niveditarufus.github.io/posts/the-final-phase/</link>
-    <pubDate>Tue, 04 Aug 2020 15:41:34 &#43;0530</pubDate>
+    <title>Before GSoC &#39;20</title>
+    <link>https://niveditarufus.github.io/posts/before-gsoc/</link>
+    <pubDate>Mon, 11 May 2020 20:48:48 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/the-final-phase/</guid>
-    <description><![CDATA[I am in the last leg of my GSoC journey. This has been an incredible experience so far. The amount of learning I have done is indeed incredible and is something to be really grateful for. Initially, I was quite anxious if would be able to deliver what I had promised. Now it looks like I would be able to more than that 😌😅.
-I am really looking forward to reaching the finish line smiling but at the same time a little sad that it would bring my GSoC journey to an end.]]></description>
+    <guid>https://niveditarufus.github.io/posts/before-gsoc/</guid>
+    <description><![CDATA[I had decided that I want to participate in GSoC 2020 sometime around September 2019. This is quite early 😂, considering that there were still five months for the organizations to be announced. But, I still went through the organizations that participated in GSoC, 2019. I knew that I would be very comfortable working with robotics-related projects. So, I looked through the organizations which had projects in this field. I also followed through and tried to understand as much as I can the projects undertaken by each of the organizations.]]></description>
 </item><item>
-    <title>Contribution 9: Majority Voting</title>
-    <link>https://niveditarufus.github.io/posts/majorityvoting/</link>
-    <pubDate>Tue, 28 Jul 2020 12:21:44 &#43;0530</pubDate>
+    <title>Contribution 1: My First Bug Fix</title>
+    <link>https://niveditarufus.github.io/posts/my-first-bug-fix/</link>
+    <pubDate>Tue, 12 May 2020 21:03:58 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/majorityvoting/</guid>
-    <description><![CDATA[This is my last contribution to the second phase of my GSoC journey. Here, I have implemented the Boyer-Moore Majority Vote algorithm for video feeds from multiple cameras from different perspectives, i.e. for views shown below. (Image Source: SALSA dataset)   Camera: 1     Camera: 2     Camera: 3     Camera: 4   As visualized from these images, stitching is not possible in this case as their perspectives are different.]]></description>
+    <guid>https://niveditarufus.github.io/posts/my-first-bug-fix/</guid>
+    <description><![CDATA[This post is about my very first bug fix in RoboComp&rsquo;s human-detection repository. Everybody starts with a very small bug, so did I. I found this issue on March 16(before the student application deadline) when I was trying to get the PeopleCounter module working on my PC. I realized that there was a line missing in the config file that hosts the People Server. I also found that a path to MobileNetSSD_deploy.]]></description>
 </item><item>
-    <title>Image Stitching</title>
-    <link>https://niveditarufus.github.io/posts/image-stitching/</link>
-    <pubDate>Wed, 22 Jul 2020 16:48:57 &#43;0530</pubDate>
+    <title>Contribution 2: Fixing import errors</title>
+    <link>https://niveditarufus.github.io/posts/contribution-2/</link>
+    <pubDate>Tue, 12 May 2020 21:35:34 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/image-stitching/</guid>
-    <description><![CDATA[In my previous post, I had mentioned a stitching algorithm that was supposed to be robust and insensitive to illumination changes. In this post, I verify the same. So I have implemented the standalone image stitcher here, where I change the illumination randomly(make the image dark, bright, hazy, etc) to verify the robustness of the stitcher.
-Given below is the result of the stitched video where each frame is randomly subjected to illumination changes (bright, dark, Haze):]]></description>
+    <guid>https://niveditarufus.github.io/posts/contribution-2/</guid>
+    <description><![CDATA[I found this issue because I was still unable to get the PeopleCounter component working. It raised an import error there where some functions imported from the resources directory, which is outside the working directory. My commit ensures that the python modules are imported properly. I had made a pull-request for the same which is still under review. I will update this post once the status changes.
+Status: Under Review ]]></description>
 </item><item>
-    <title>Contribution 8: Multi View People Counter</title>
-    <link>https://niveditarufus.github.io/posts/multi-view-people-counter/</link>
-    <pubDate>Fri, 10 Jul 2020 14:45:47 &#43;0530</pubDate>
+    <title>Contribution 3: Fixing default parameter values</title>
+    <link>https://niveditarufus.github.io/posts/contribution-3/</link>
+    <pubDate>Tue, 12 May 2020 21:51:16 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/multi-view-people-counter/</guid>
-    <description><![CDATA[In one of my earlier posts, I had mentioned the preprocessing step for counting the number of people from multiple partially overlapping views. This step involves stitching of the images together to form a single image which is then passed into the counting module (code). This might result in a performance overhead compared to the normal case, this can be balanced by adjusting the skip_frames parameter in the code. The stitching algorithm used here is based on this publication.]]></description>
+    <guid>https://niveditarufus.github.io/posts/contribution-3/</guid>
+    <description><![CDATA[I had submitted a pull-request to update the file specificworker.py in the component openpifpafserver. These added lines are some parameters which are in the file and not specifying these values lead to Attribute errors. I initialized all these parameters to the default values specified in the openpifpaf package. I belive this should solve the issue. This pull-request is still under review and I will update the post when the status changes.]]></description>
 </item><item>
-    <title>The Second Phase</title>
-    <link>https://niveditarufus.github.io/posts/the-second-phase/</link>
-    <pubDate>Sun, 05 Jul 2020 12:51:51 &#43;0530</pubDate>
+    <title>Contribution 4: Porting to Python 3 and and other changes</title>
+    <link>https://niveditarufus.github.io/posts/contribution-4/</link>
+    <pubDate>Sun, 17 May 2020 15:02:35 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/the-second-phase/</guid>
-    <description><![CDATA[I so pumped up right now because I passed the first evaluation and will be getting paid soon 😌😅. This has been a wonderful journey till now and I have no idea how the time passed so fast. Someone once said, &ldquo;Do what you love, you never have to work a day in your life&rdquo;, I guess I have seen the truth to this statement. I am extremely grateful to my mentors for giving me the freedom to explore many things in this endeavor and without even knowing it I have learned so much 😃.]]></description>
+    <guid>https://niveditarufus.github.io/posts/contribution-4/</guid>
+    <description><![CDATA[After considering declining support for Python 2 programming language and added benefits from upgrades to Python 3, it is always advisable for a developer to select Python version 3. So, from the statement above, it is pretty much obvious that the first task assigned to me was porting the People Counter module from Python 2 to Python 3 which is done. Changes made are:
+ Changed all print statements from print &quot; &quot; to print().]]></description>
 </item><item>
-    <title>Contribution 7: Filtering Methods</title>
-    <link>https://niveditarufus.github.io/posts/filtering-methods/</link>
-    <pubDate>Mon, 29 Jun 2020 14:55:41 &#43;0530</pubDate>
+    <title>Project Phase - The Onset </title>
+    <link>https://niveditarufus.github.io/posts/project-phase/</link>
+    <pubDate>Mon, 25 May 2020 20:46:07 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/filtering-methods/</guid>
-    <description><![CDATA[This will be my last post for the first phase of my GSoC journey. I had promised to deliver a working module that returns the count of people from a single view through a continuous video feed. From my earlier post, you might have seen the challenges I had faced and the solutions I had proposed. I had mentioned that use of filtering techniques may help smooth out unrealistic jumps in a continuous video feed, I had resorted to two major methods which proved to improve the performance of the count values return with the SS-DCNet model namely,]]></description>
+    <guid>https://niveditarufus.github.io/posts/project-phase/</guid>
+    <description><![CDATA[So the project phase is going to start in few days and I am so under the pump 😃. I had promised my mentors that I will look through existing methods that can be used to count and track people and find out which approach works better by testing all of them. The methods I want to look at are:
+ CSRnet SS-DCNet Deep SORT
+I am in the process of setting up necessary environments for each of the methods.]]></description>
 </item><item>
-    <title>SSDCNet vs SSDNet</title>
-    <link>https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/</link>
-    <pubDate>Sat, 20 Jun 2020 15:27:24 &#43;0530</pubDate>
+    <title>Contribution 5: My Baseline</title>
+    <link>https://niveditarufus.github.io/posts/mybaseline/</link>
+    <pubDate>Mon, 01 Jun 2020 15:44:26 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/ssdcnet-vs-ssdnet/</guid>
-    <description><![CDATA[In my earlier post, I had mentioned that the people counter based on the SSDCNet model fails sometimes when the place is very scarcely populated. So I compared its performance with a counter based on the SSDNet model. Given below is an example of footage of 18 people (SALSA dataset).   With SS-DCNet based counter     With SSDNet based counter   We can see that the SSDCNet based counter performs better in comparison with the SSD based approach.]]></description>
-</item><item>
-    <title>Contribution 6: Crowd Counting From Single View with SSDCNet</title>
-    <link>https://niveditarufus.github.io/posts/crowdcountingfromsingleview/</link>
-    <pubDate>Mon, 15 Jun 2020 21:54:49 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://niveditarufus.github.io/posts/crowdcountingfromsingleview/</guid>
-    <description><![CDATA[I have successfully completed the first milestone of my GSoC which was to count people present in the scene given a video feed using existing deep Net models. In my earlier post, I had mentioned that I will be going foreward with the SS-DCNet model due the advantages which I had discussed. I have used the models that were trained the Shanghai Dataset(A, B) and QRNF dataset by the authors of the SS-DCNet paper(ICCV 2019).]]></description>
+    <guid>https://niveditarufus.github.io/posts/mybaseline/</guid>
+    <description><![CDATA[The project phase has started. I have made a standalone python project to count people which will be my baseline to test different methods. You can find it here. This is a refactored version of the existing PeopleCounter module of RoboComp. Once, the most suited method is chosen, I will integrate it with RoboComp architecture which forms the final stage of the project.
+  A short demo   So there, two ways to count people inside a building:]]></description>
 </item><item>
     <title>Comparison of methods</title>
     <link>https://niveditarufus.github.io/posts/comparison/</link>
@@ -79,5 +74,12 @@ Given below is the result of the stitched video where each frame is randomly sub
     <guid>https://niveditarufus.github.io/posts/comparison/</guid>
     <description><![CDATA[In my earlier post, I had mentioned two approaches to count people. So, I have gone through the proposed methods namely:
  CSRNet SS-DCNet Deep-SORT  As I have already mentioned, CSRNet and SS-DCNet are suited to cases when we have footage that is from within the room by keeping a running count of the number of people in the room frame-by-frame. Both these networks work well for densely crowded places.]]></description>
+</item><item>
+    <title>Contribution 6: Crowd Counting From Single View with SSDCNet</title>
+    <link>https://niveditarufus.github.io/posts/crowdcountingfromsingleview/</link>
+    <pubDate>Mon, 15 Jun 2020 21:54:49 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://niveditarufus.github.io/posts/crowdcountingfromsingleview/</guid>
+    <description><![CDATA[I have successfully completed the first milestone of my GSoC which was to count people present in the scene given a video feed using existing deep Net models. In my earlier post, I had mentioned that I will be going foreward with the SS-DCNet model due the advantages which I had discussed. I have used the models that were trained the Shanghai Dataset(A, B) and QRNF dataset by the authors of the SS-DCNet paper(ICCV 2019).]]></description>
 </item></channel>
 </rss>

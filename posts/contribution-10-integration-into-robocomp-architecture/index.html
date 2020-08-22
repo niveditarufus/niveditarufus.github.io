@@ -19,7 +19,7 @@ The ability to configure an application&rsquo;s properties externally provides a
 <meta name="application-name" content="Nivedita Rufus">
 <meta name="apple-mobile-web-app-title" content="Nivedita Rufus"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/contribution-10-integration-into-robocomp-architecture/" /><link rel="prev" href="https://niveditarufus.github.io/posts/the-final-phase/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://niveditarufus.github.io/posts/contribution-10-integration-into-robocomp-architecture/" /><link rel="next" href="https://niveditarufus.github.io/posts/the-final-phase/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -28,7 +28,7 @@ The ability to configure an application&rsquo;s properties externally provides a
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/niveditarufus.github.io\/posts\/contribution-10-integration-into-robocomp-architecture\/"
-        },"genre": "posts","wordcount":  336 ,
+        },"genre": "posts","wordcount":  357 ,
         "url": "https:\/\/niveditarufus.github.io\/posts\/contribution-10-integration-into-robocomp-architecture\/","datePublished": "2020-08-10T13:01:51+05:30","dateModified": "2020-08-10T13:01:51+05:30","publisher": {
             "@type": "Organization",
             "name": "Nivedita Rufus"},"author": {
@@ -75,7 +75,7 @@ The ability to configure an application&rsquo;s properties externally provides a
 <main class="main">
                 <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Contribution 10: Integration Into RoboComp Architecture</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nivedita Rufus</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-08-10">2020-08-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;336 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-08-10">2020-08-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;357 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="content" id="content"><p>I feel really great as I am almost done with integrating the code into the RoboComp architecture. There are still a few things left like documentation and maybe a little code clean up. Over to the details.<br>
 The ability to configure an application&rsquo;s properties externally provides a great deal of flexibility. One can use any combination of command-line options and configuration files to achieve the desired settings, all without having to modify source code of the application. Ice is a handy tool to use in this respect because at it run time automatically loads a configuration file during the creation of a property set, which is an instance of the <code>Ice::Properties</code> interface. So, on the same note, I have created a RoboComp Component <a href="" rel="">PeopleCounter_SSDCNET</a> which uses the SS-DCNet architecture for counting people in a video feed.<br>
@@ -100,7 +100,8 @@ This style of programming ensures easy upgrades in the future without much rewri
             <h4> RoboComp People Counter with SS-DCNet</h4>
         </figcaption>
 </figure>
-</li>
+<br>
+I have compiled all my contributions in this branch of the <a href="https://github.com/niveditarufus/human-detection/tree/gsoc" target="_blank" rel="noopener noreffer">Human-Detection</a> repository and made a <a href="https://github.com/robocomp/human-detection/pull/6" target="_blank" rel="noopener noreffer">pull request</a> for the same.</li>
 </ol>
 <h5 id="status-under-review">Status: Under Review</h5>
 </div><div class="post-footer" id="post-footer">
@@ -126,7 +127,8 @@ This style of programming ensures easy upgrades in the future without much rewri
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/the-final-phase/" class="prev" rel="prev" title="The Final Phase"><i class="fas fa-angle-left fa-fw"></i>The Final Phase</a></div>
+    <div class="post-nav">
+            <a href="/posts/the-final-phase/" class="next" rel="next" title="The Final Phase">The Final Phase<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
