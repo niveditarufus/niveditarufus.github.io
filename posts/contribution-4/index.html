@@ -100,7 +100,7 @@ So, to conversion of an empty string into bytes, can be done with<br>
 in <a href="https://github.com/robocomp/human-detection/blob/master/components/openpifpafserver/src/specificworker.py" target="_blank" rel="noopener noreffer">specificworker.py</a> to:<br>
 <code>processed_image_cpu, _, __ = transforms.EVAL_TRANSFORM(image_pil, [], None)</code><br>
 because <code>image_transform</code> is no longer in <code>openpifpaf.transforms.</code> because of the version update of OpenpifPaf Library.</li>
-<li>I also had to convert the image to a PIL image before passing it throught the function mentioned above from a CV2 image as the function only accepts PIL image with the following:
+<li>I also had to convert the image to a PIL image before passing it through the function mentioned above from a CV2 image as the function only accepts PIL image with the following:
 <code>image_pil = PIL.Image.fromarray(image)</code></li>
 </ol>
 <p>There were also a few very minor bugs which I fixed. So Now the component is up and running and I have made <a href="https://github.com/robocomp/human-detection/pull/5" target="_blank" rel="noopener noreffer">Pull-request</a> for the same, do check it out!!!</p>
