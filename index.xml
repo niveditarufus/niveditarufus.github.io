@@ -32,15 +32,16 @@
     <pubDate>Tue, 12 May 2020 21:35:34 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/contribution-2/</guid>
-    <description><![CDATA[I found this issue because I was still unable to get the PeopleCounter component working. It raised an import error there where some functions imported from the resources directory, which is outside the working directory. My commit ensures that the python modules are imported properly. I had made a pull-request for the same which is still under review. I will update this post once the status changes.
-Status: Under Review ]]></description>
+    <description><![CDATA[I found this issue because I was still unable to get the PeopleCounter component working. It raised an import error there where some functions imported from the resources directory, which is outside the working directory. My commit ensures that the python modules are imported properly. I had made a pull-request for the same which is now merged.
+Status: Merged ]]></description>
 </item><item>
     <title>Contribution 3: Fixing default parameter values</title>
     <link>https://niveditarufus.github.io/posts/contribution-3/</link>
     <pubDate>Tue, 12 May 2020 21:51:16 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://niveditarufus.github.io/posts/contribution-3/</guid>
-    <description><![CDATA[I had submitted a pull-request to update the file specificworker.py in the component openpifpafserver. These added lines are some parameters which are in the file and not specifying these values lead to Attribute errors. I initialized all these parameters to the default values specified in the openpifpaf package. I belive this should solve the issue. This pull-request is still under review and I will update the post when the status changes.]]></description>
+    <description><![CDATA[I had submitted a pull-request to update the file specificworker.py in the component openpifpafserver. These added lines are some parameters which are in the file and not specifying these values lead to Attribute errors. I initialized all these parameters to the default values specified in the openpifpaf package. I believe this should solve the issue.
+Status: Merged ]]></description>
 </item><item>
     <title>Contribution 4: Porting to Python 3 and and other changes</title>
     <link>https://niveditarufus.github.io/posts/contribution-4/</link>
